@@ -13,10 +13,9 @@ public class MainFrame extends JFrame{
     private JButton jb4 = new JButton("離開");
     private JTextArea jlbL = new JTextArea();
     private JTextArea jlbR = new JTextArea();
-    private JTextField jbKey = new JTextField();
+    private JTextField jbKey = new JTextField("9");
     private JLabel jlb = new JLabel("金鑰");
     private JPanel jpn = new JPanel(new GridLayout(6,1,3,3));
-    private int x = 0;
     private int key= Integer.parseInt(jbKey.getText());
     private void init(){
         this.setLayout(new BorderLayout(3,3));
