@@ -13,10 +13,11 @@ public class MainFrame extends JFrame{
     private JButton jb4 = new JButton("離開");
     private JTextArea jlbL = new JTextArea();
     private JTextArea jlbR = new JTextArea();
-    private JTextField jbKey = new JTextField("3");
+    private JTextField jbKey = new JTextField();
     private JLabel jlb = new JLabel("金鑰");
     private JPanel jpn = new JPanel(new GridLayout(6,1,3,3));
-    private int x = 0, key = 3;
+    private int x = 0;
+    private int key= Integer.parseInt(jbKey.getText());
     private void init(){
         this.setLayout(new BorderLayout(3,3));
         this.setBounds(100,100,500,400);
@@ -24,6 +25,7 @@ public class MainFrame extends JFrame{
         this.add(jpn,BorderLayout.CENTER);
         this.add(jlbL,BorderLayout.WEST);
         this.add(jlbR,BorderLayout.EAST);
+
         jlbL.setPreferredSize(new Dimension(200,400));
         jlbL.setLineWrap(true);
         jlbR.setPreferredSize(new Dimension(200,400));
